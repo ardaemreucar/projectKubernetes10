@@ -4,7 +4,7 @@ metadata:
    name: ardaucardeployment
 spec:
    replicas: 2
-   selector:      # tells the controller which pods to watch/belong to
+   selector:      
     matchLabels:
      app: ardaucar
    template:
