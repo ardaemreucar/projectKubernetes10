@@ -1,0 +1,14 @@
+kind: Service                             
+apiVersion: v1
+metadata:
+  name: ardaucarService
+  labels:
+    app: ardaucar
+spec:
+  ports:
+    - port: 8085                               
+      targetPort: 80                    
+      nodePort: 31200
+  selector:
+    app: ardaucar                    
+  type: LoadBalancer                   
