@@ -6,7 +6,7 @@ metadata:
     app: ardaucar
 spec:
   ports:
-    - port: 8085                               
+    - port: 8080                               
       targetPort: 80                    
       nodePort: 31200
   selector:
